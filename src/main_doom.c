@@ -525,8 +525,9 @@ int main(int argc, char *argv[]) {
         SDL_CreateRenderer(
             state.window,
             -1,
-            SDL_RENDERER_ACCELERATED
+            SDL_RENDERER_SOFTWARE
             | SDL_RENDERER_PRESENTVSYNC);
+        //SDL_RENDERER_ACCELERATED -- crashes in WSL2; SOFTWARE is OK, Twenkid
 
     state.texture =
         SDL_CreateTexture(
