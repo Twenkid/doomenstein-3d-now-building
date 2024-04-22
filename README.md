@@ -5,6 +5,15 @@
 * `src/main_doom.c`: a DOOM-style software renderer
 * `src/main_wolf.c`: a Wolfenstein 3D-style software renderer
 
+## Twenkid's: extending the engine
+
+tw_wolf.c etc. 
+Add texture mapping (start with simple stripes) in verlines
+
+![image](https://github.com/Twenkid/doomenstein-3d-now-building/assets/23367640/175b7503-051f-420c-b51b-4ce54e7034b1)
+
+etc. TBC
+
 ### Building & Running
 
 `$ make doom|wolf|all`, binaries are `bin/doom` and `bin/wolf` respectively
@@ -12,6 +21,7 @@
 Youtube: https://www.youtube.com/watch?v=fSjc8vLMg8c
 
 **Todor/Twenkid:** The original repo didn't build out of the box (WSL2 and native Linux Ubuntu 22.04).
+
 
 This is how I fixed it in order to run on both platforms (_SOFTWARE is not required for the native Linux one if you have a GPU)
 
