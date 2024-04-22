@@ -9,7 +9,8 @@
 
 `$ make doom|wolf|all`, binaries are `bin/doom` and `bin/wolf` respectively
 
-**Todor/Twenkid:** The original repo didn't build out of the box (WSL2), the following resolved the issues:
+**Todor/Twenkid:** The original repo didn't build out of the box (WSL2 and native Linux Ubuntu 22.04).
+This is how I fixed it:
 
 ```gcc -o bin/src/main_doom.o -MMD -c -std=c2x -O2 -g -fbracket-depth=1024 -fmacro-backtrace-limit=0 -Wall -Wextra -Wpedantic -Wfloat-equal -Wstrict-aliasing -Wswitch-default -Wformat=2 -Wno-newline-eof -Wno-unused-parameter -Wno-strict-prototypes -Wno-fixed-enum-extension -Wno-int-to-void-pointer-cast -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer -Wno-gnu-zero-variadic-macro-arguments -Wno-gnu-empty-struct -Wno-gnu-auto-type -Wno-gnu-empty-initializer -Wno-gnu-pointer-arith -Wno-c99-extensions -Wno-c11-extensions -iquotesrc src/main_doom.c
 gcc: error: unrecognized command-line option ‘-fbracket-depth=1024’
