@@ -217,8 +217,8 @@ int main(int argc, char *argv[]) {
         }
 
         const f32
-            rotspeed = 3.0f * 0.016f,
-            movespeed = 3.0f * 0.016f;
+            rotspeed = 1.0f * 0.016f,  //3.0* -- too fast
+            movespeed = 1.0f * 0.016f; //3.0*
 
         const u8 *keystate = SDL_GetKeyboardState(NULL);
         if (keystate[SDL_SCANCODE_LEFT]) {
