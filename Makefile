@@ -12,8 +12,8 @@ INCFLAGS = -iquotesrc
 CCFLAGS  = -std=c2x
 CCFLAGS += -O2
 CCFLAGS += -g
-CCFLAGS += -fbracket-depth=1024
-CCFLAGS += -fmacro-backtrace-limit=0
+#CCFLAGS += -fbracket-depth=1024
+#CCFLAGS += -fmacro-backtrace-limit=0
 CCFLAGS += -Wall
 CCFLAGS += -Wextra
 CCFLAGS += -Wpedantic
@@ -82,7 +82,11 @@ doom: dirs $(BIN)/src/main_doom.o
 wolf: dirs $(BIN)/src/main_wolf.o
 	$(LD) -o bin/wolf $(BIN)/src/main_wolf.o $(LDFLAGS)
 
-all: dirs doom wolf
+tw_wolf: dirs $(BIN)/src/tw_wolf.o
+	$(LD) -o bin/tw_wolf $(BIN)/src/main_wolf.o $(LDFLAGS)
+
+
+all: dirs doom wolf tw_wolf
 
 clean:
 	rm -rf bin
