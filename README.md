@@ -16,7 +16,7 @@ etc. TBC
 
 ### Building & Running
 
-`$ make doom|wolf|all`, binaries are `bin/doom` and `bin/wolf` respectively
+`$ make doom|wolf|tw_wolf|all`, binaries are `bin/doom` and `bin/wolf` respectively
 
 Youtube: https://www.youtube.com/watch?v=fSjc8vLMg8c
 
