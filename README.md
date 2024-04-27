@@ -7,6 +7,8 @@
 
 ## Twenkid's: extending the engine
 
+Video about this repo on Twenkid Studio channel: https://youtu.be/iTsI-PIBJdo
+
 tw_wolf.c etc. 
 Add texture mapping (start with simple stripes) in verlines
 
